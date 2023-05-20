@@ -109,7 +109,7 @@ var CP = Math.ceil(monthNum()/4)
     console.log(CP)
 }*/
 
-var KostenEin = {
+var Kosten = {
     content: 0,
     feeddes: 0,
     texter: 0,
@@ -130,12 +130,12 @@ var KostenEin = {
 var contentRes = () => {
     var checked = document.getElementById("check2").checked;
     if (checked) {
-        KostenEin.content = KostenEin.content+(StatVal.dienstleistung.content*CP+StatVal.aufwand.chatGPTExcelAkKu);
+        Kosten.content = Kosten.content+(StatVal.dienstleistung.content*CP+StatVal.aufwand.chatGPTExcelAkKu)/60*StatVal.VKS.MAGa;
         
     }
-    else {KostenEin.content = 0}
+    else {Kosten.content = 0}
     
-    console.log(KostenEin.content)
+    console.log(Kosten.content)
     console.log(checked)
     
     
