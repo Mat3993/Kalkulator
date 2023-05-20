@@ -128,6 +128,19 @@ var KostenEin = {
     eniKostenZu: 0,
     }
 var contentRes = () => {
+    var checked = document.getElementById("check2").checked;
+    if (checked) {
+        KostenEin.content = KostenEin.content+(StatVal.dienstleistung.content*CP+StatVal.aufwand.chatGPTExcelAkKu);
+        
+    }
+    else {KostenEin.content = 0}
+    
+    console.log(KostenEin.content)
+    console.log(checked)
+    
+    
+
+
 
 }  
 
