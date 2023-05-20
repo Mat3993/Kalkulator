@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="posts" onchange="postNum()">
+        <input type="number" id="month" onchange="monthNum()">
+    </div>
+
+    <div style="height: 20px;"></div>
+
+
+    <div id="check">
+        <form >
+            <input type="checkbox" id="check1" name="question1" value="1" >
+            <label for="check1">Sollen wir für Sie aussagekräfte und abwechslungsreiche Texte erstellen sowie die Hashtagrecherche übernehmen?</label><br>
+            <input type="checkbox" id="check2" name="question2" value="2" onchange="contentRes()">
+            <label for="check2">Sollen wir für Sie die Ideenfindung und die -planung übernehmen? *</label><br>
+            <input type="checkbox" id="check3" name="question3" value="3">
+            <label for="check3">Sollen wir für Sie das Posten der Beiträge zu den trafficstärksten Zeiten übernehmen? *</label><br><br>
+            <input type="checkbox" id="check4" name="question4" value="4">
+            <label for="check3">Sollen wir für Sie das Feeddesign übernehmen (Design, Bio,        Highlights, Icons, usw) *</label><br><br>
+            <input type="checkbox" id="check5" name="question5" value="5">
+            <label for="check5">Sollen wir für Sie das Community Management übernehmen? *
+                Dazu gehört Kommentare beantworten, Nachrichten beantworten/weiterleiten, negative Kommentare löschen etc.</label><br><br>
+            
+        </form>
+    </div>
+        
+
+      <div style="height: 20px;"></div>
+
+    <div id="bilder">
+        <form>
+            <input type="radio" id="1" name="bilder" value="">
+            <label for="1">Schicken Sie bitte einen Fotografen vorbei, der passende und professionelle Bilder erstellt.</label><br>
+            <input type="radio"  name="bilder" id="2"  value="">
+            <label for="2">Es sollen Stockfotos verwendet werden.</label><br>
+            <input type="radio" id="3" name="bilder" value="">
+            <label for="3">Ich stelle das Bildmaterial selber zur Verfügung, benötige jedoch eine Schulung/Einweisung.</label><br>
+            <input type="radio" id="4" name="bilder" value="">
+            <label for="4">Ich stelle das Bildmaterial selber zur Verfügung.</label><br>
+        </form>
+
+       <div style="height: 20px;"></div>
+
+        
+
+    </div>
+    <div id="videos">
+        <form>
+            <input type="radio" id="5" name="videos" value="">
+            <label for="5">Ich stelle das Videomaterial selber zur Verfügung.</label><br>
+            <input type="radio" id="6" name="videos"  value="">
+            <label for="6">Ich stelle das Videomaterial selber zur Verfügung, benötige jedoch eine Schulung/Einweisung.</label><br>
+            <input type="radio" id="7" name="videos"  value="">
+            <label for="7">Es sollen Stockvideos verwendet werden.</label><br>
+            <input type="radio" id="8" name="videos"  value="">
+            <label for="8">Schicken Sie bitte einen Videografen vorbei, der passende und professionelle Videos erstellt.</label><br>
+            <input type="radio" id="9" name="videos"   value="">
+            <label for="9">Es sollen keine Videos verwendet werden.</label><br>
+        </form>
+        
+
+    </div>
+    <script src="calc.js"> </script>
+    
+</body>
+</html>
